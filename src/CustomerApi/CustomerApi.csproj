@@ -23,7 +23,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\CommonLibrary\CommonLibrary.csproj" />
+    <None Include="CommonLibrary.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj" />
+  </ItemGroup>
+
+ 
 
 </Project>
