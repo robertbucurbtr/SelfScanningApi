@@ -25,6 +25,7 @@ namespace CustomerApi
                 {
                     options.ConnectionString = Configuration.GetSection("MongoDb:ConnectionString").Value;
                     options.Database = Configuration.GetSection("MongoDb:Database").Value;
+                    options.CollectionName = Configuration.GetSection("MongoDb:CollectionName").Value;
                 });
 
             services.AddTransient(typeof(IGenericContext<>), typeof(GenericContext<>));

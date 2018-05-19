@@ -8,9 +8,9 @@ namespace CommonLibrary.Database
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseClass
     {
-        private readonly GenericContext<T> _context;
+        private readonly IGenericContext<T> _context;
 
-        public GenericRepository(GenericContext<T> context)
+        public GenericRepository(IGenericContext<T> context)
         {
             _context = context;
         }
