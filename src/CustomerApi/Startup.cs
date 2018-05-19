@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CustomerApi.Database;
+﻿using CommonLibrary.Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace CustomerApi
 {
@@ -33,8 +27,8 @@ namespace CustomerApi
                     options.Database = Configuration.GetSection("MongoDb:Database").Value;
                 });
 
-            services.AddTransient<ICustomerContext, CustomerContext>();
-            services.AddTransient<ICustomerRepository, CustomerRepository>();
+            services.AddTransient(typeof(IGenericContext<>), typeof(GenericContext<>));
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

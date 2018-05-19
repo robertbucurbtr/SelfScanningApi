@@ -1,13 +1,13 @@
 ﻿using CommonLibrary.Database;
-using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace CustomerApi.Database
+namespace CustomerApi.Dto
 {
-    public class Customer:BaseClass
+    public class Customer : BaseClass
     {
         [BsonElement]
         public string CustomerName { get; set; }

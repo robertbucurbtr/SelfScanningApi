@@ -7,7 +7,6 @@ namespace CustomerApi.Dto
 {
     public class CustomerDto
     {
-        public string CustomerId { get; set; }
         public string CustomerName { get; set; }
     }
 }

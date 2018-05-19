@@ -1,4 +1,4 @@
-﻿namespace CustomerApi.Database
+﻿namespace CommonLibrary.Database
 {
     public class Settings
     {
