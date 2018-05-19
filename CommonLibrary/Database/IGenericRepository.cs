@@ -12,5 +12,6 @@ namespace CommonLibrary.Database
         Task Create(T entity);
         Task<bool> Update(T entity);
         Task<bool> Delete(string name);
+        void SetCollection(string collection);
     }
 }

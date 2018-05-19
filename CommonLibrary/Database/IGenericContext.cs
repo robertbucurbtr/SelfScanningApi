@@ -7,6 +7,6 @@ namespace CommonLibrary.Database
 {
     public interface IGenericContext<T> where T : BaseClass
     {
-        IMongoCollection<T> Entities { get; }
+        IMongoCollection<T> this[string index] { get; }
     }
 }

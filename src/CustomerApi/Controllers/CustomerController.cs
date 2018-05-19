@@ -14,6 +14,7 @@ namespace CustomerApi.Controllers
         public CustomerController(IGenericRepository<Customer> customerRepository)
         {
             this.customerRepository = customerRepository;
+            this.customerRepository.SetCollection("Customers");
         }
         [HttpGet]
         public async Task<IActionResult> Get()

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Collections.Generic;
 
 namespace CustomerApi
 {
@@ -25,7 +26,7 @@ namespace CustomerApi
                 {
                     options.ConnectionString = Configuration.GetSection("MongoDb:ConnectionString").Value;
                     options.Database = Configuration.GetSection("MongoDb:Database").Value;
-                    options.CollectionName = Configuration.GetSection("MongoDb:CollectionName").Value;
+                    options.CollectionsName = Configuration.GetSection("MongoDb:CollectionName").Get<List<string>>();
                 });
 
             services.AddTransient(typeof(IGenericContext<>), typeof(GenericContext<>));
