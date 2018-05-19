@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfScanning", "src\SelfScanning\SelfScanning.csproj", "{D2F062BD-5488-48FE-9FF7-8CA06C02D3EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2F062BD-5488-48FE-9FF7-8CA06C02D3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F062BD-5488-48FE-9FF7-8CA06C02D3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F062BD-5488-48FE-9FF7-8CA06C02D3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F062BD-5488-48FE-9FF7-8CA06C02D3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {863AC7F4-A187-4C18-8C62-14697CCA2187}
+	EndGlobalSection
+EndGlobal
